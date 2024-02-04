@@ -1,0 +1,36 @@
+{
+  "transactions": [
+    {
+      "id": 1,
+      "description": "Desenvolvimento de site",
+      "price": 14000,
+      "category": "Venda",
+      "type": "income",
+      "createdAt": "2023-12-10T15:58:59.397Z"
+    },
+    {
+      "id": 2,
+      "description": "Hambúrguer",
+      "price": 50,
+      "category": "Venda",
+      "type": "outcome",
+      "createdAt": "2023-12-10T15:30:59.397Z"
+    },
+    {
+      "category": "Venda",
+      "description": "Desenvolvimento de app",
+      "price": 10000,
+      "type": "income",
+      "createdAt": "2023-12-10T18:41:59.918Z",
+      "id": 3
+    },
+    {
+      "category": "Comida",
+      "description": "Tapioca",
+      "price": 20,
+      "type": "outcome",
+      "createdAt": "2023-12-10T18:50:50.102Z",
+      "id": 4
+    }
+  ]
+}

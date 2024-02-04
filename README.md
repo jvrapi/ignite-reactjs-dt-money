@@ -1,0 +1,1 @@
+figma: https://www.figma.com/file/Ln4JR7vWiImZOKosAtzr9H/DT-Money-(Community)?node-id=42078%3A437&mode=dev
