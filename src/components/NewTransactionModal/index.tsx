@@ -12,6 +12,7 @@ import { Controller, useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { TransactionsContext } from '../../contexts/TransactionsContext'
 import { useContextSelector } from 'use-context-selector'
+import { CurrencyInput } from 'react-currency-mask'
 
 const newTransactionSchema = z.object({
   description: z.string(),
@@ -65,11 +66,18 @@ export function NewTransactionModal() {
             {...register('description')}
           />
 
-          <input
-            type="number"
-            placeholder="Preço"
-            required
-            {...register('price', { valueAsNumber: true })}
+          <Controller
+            name="price"
+            control={control}
+            render={({ field }) => (
+              <CurrencyInput
+                value={field.value}
+                onChangeValue={(_, value) => {
+                  field.onChange(value)
+                }}
+                InputElement={<input placeholder="Preço" required />}
+              />
+            )}
           />
 
           <input
